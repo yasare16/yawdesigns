@@ -1,4 +1,7 @@
-<html lang="en"><!--
+<!DOCTYPE html>
+<html lang='en'>
+
+<!--
 Author: Yaw Asare-Darko
 
 Date: 2012 December 1
@@ -19,7 +22,9 @@ Contact: yasare16@gmail.com || (347) 470-3610
       8o.  .88'
       `oV888V'
         
---><head>
+-->
+
+<head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
    <meta name="description" content="Yaw Asare is a front-end web designer/developer based in Atlanta. Yaw Asare designs and builds affordable web sites for growing companies in Georgia. Atlanta Advertising Agency Support and Website Development Services. He is available for work in Web Design/Development, SEO and Art Direction and currently doing freelance work!">
@@ -28,15 +33,15 @@ Contact: yasare16@gmail.com || (347) 470-3610
 
    <link rel="icon" href="/image/yaw-new-logo.png" type="image/x-icon">
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="yawdesigns.css" type="text/css" media="all">
-   <link href="http://fonts.googleapis.com/css?family=Philosopher|Gafata|Michroma|Sanchez|Electrolize|Raleway|Fjalla+One" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="style.css" type="text/css" media="all">
+   <link href='http://fonts.googleapis.com/css?family=Philosopher|Gafata|Michroma|Sanchez|Electrolize|Raleway|Fjalla+One' rel='stylesheet' type='text/css'>
    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
    <!--[if lt IE 9]>
        <link href="ie.css" rel="stylesheet" type="text/css" media="all">
        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
    <![endif]-->
 
-   <script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -49,33 +54,35 @@ Contact: yasare16@gmail.com || (347) 470-3610
 </head>
 
 <body> 
-    <div class="header">
+    <div class="header envelope">
        <a href="http://www.yawdesigns.com" class="yaw-logo">
           <img src="image/yaw-new-logo.png" alt="yaw-logo">
        </a>
        <div class="nav">
          <div class="prenav">
-          <span class="d1">home</span>
-          <span class="d2">about</span>
-          <span class="d3">my work</span>
-          <span class="d4 current">contact</span>
+          <span class='d1 flap'>home</span>
+          <span class='d2 flap'>about</span>
+          <span class='d3 flap'>my work</span>
+          <span class='d4 flap'>contact</span>
          </div>
 
-          <a href="#home" id="d1" class="">home</a>
-          <a href="#about" id="d2" class="">about</a>
-          <a href="#work" id="d3" class="">my work</a>
-          <a href="#contact" id="d4" class="this">contact</a>
+          <a href='#home' id="d1">home</a>
+          <a href='#about' id="d2">about</a>
+          <a href='#work' id="d3">my work</a>
+          <a href='#contact' id="d4">contact</a>
        </div>
 
-    </div><!--HOME SCREEN-->
+</div>
+<!--HOME SCREEN-->
 <section id="home">
-<div class="wrapper" data-stellar-ratio="0.5" style="height: 768px; left: 0px; top: 626px; display: none;">
-  <div class="container1 image"></div>
-  <div class="container2 image" style="opacity: 1;"></div>
-  <a class="showcase" href="#about" style="opacity: 0.8; color: rgb(244, 244, 244); text-shadow: none; background: rgb(17, 34, 51);">
+<div class="wrapper" data-stellar-ratio="0.5">
+  <div class="container1"></div>
+  <div class="container2"></div>
+  <div class="container3"></div>
+  <a class="showcase" href="#about">
       <h1>yaw asare</h1>
       <hr class="nomobi">
-      <h1>web designer &amp; developer</h1>
+      <h1>front end web developer</h1>
   </a>
 </div>
 </section>
@@ -83,16 +90,17 @@ Contact: yasare16@gmail.com || (347) 470-3610
 <!--ABOUT-->
 <section id="about">
 <div class="optimum wrap">
+     <h1 class="page-heading title row">About Me</h1>
        <div class="profile cf">
-          <div class="blurb row">
-            <p>i'm&nbsp;&nbsp;&nbsp;<span id="about-yaw">yaw asare</span></p>
+          <div class="blurb shared row">
+            <p>i&apos;m&nbsp;&nbsp;&nbsp;<span id="about-yaw">yaw asare</span></p>
             <p style="text-align:center">and<span id="webdesign">&nbsp;web design</span></p>
             <p style="text-align:right;padding-top:0">is&nbsp;<span id="what">&nbsp;what&nbsp;</span>&nbsp;i do&nbsp;!</p>
           </div>
-          <div class="me-wp nomobi">
+          <div class="me-wp shared nomobi">
              <div id="me">
                <div id="circ">
-                 <span>i'm available<br>for work!<br>•<br></span>
+                 <span>i&apos;m available<br>for work!<br>&bull;<br></span>
                  <ul>
                    <li>@funky4lyf</li>
                    <li>+1(347) 470-3610</li>
@@ -103,39 +111,39 @@ Contact: yasare16@gmail.com || (347) 470-3610
          </div>
         </div>
        <hr class="divider">
-      <div class="skills row">
-      <blockquote id="description">I'm an enthusiastic front-end web developer, currently in Atlanta, with a constant desire to challenge my creativity in Web Design, Web Development, User Experience(UX) and User Interface(UI).<br>With the experience I've acquired, I've come to love minimalism and clean, detailed design and incorporate it vehemently in my work!<br><br> I'm currently available for freelance and/or fulltime work.</blockquote> 
-        <p>I'm pretty awesome at:</p>
-       <div class="cf">
-        <svg class="shared" id="radial-graph" height="500">
-	   <circle cx="250" cy="250" r="200" fill="none" stroke="#a30303" stroke-width="25" stroke-dasharray="700,600" stroke-dashoffset="965"></circle>
-           <circle cx="250" cy="250" r="170" fill="none" stroke="#99c" stroke-width="25" stroke-dasharray="600,400" stroke-dashoffset="-280"></circle>
-           <circle cx="250" cy="250" r="140" fill="none" stroke="#61b33b" stroke-width="25" stroke-dasharray="600,380" stroke-dashoffset="280"></circle>
-    	   <circle cx="250" cy="250" r="110" fill="none" stroke="#37a9fa" stroke-width="25" stroke-dasharray="400,100" stroke-dashoffset="50"></circle>
-	   <circle cx="250" cy="250" r="80" stroke="#ffaf59" stroke-width="25" stroke-dasharray="443,200" stroke-dashoffset="0" fill="none"></circle>
-  	   <circle cx="250" cy="250" r="65" fill="#6a6a6a"></circle>
-           <text x="226" y="256" fill="#fff">skills</text>
-        </svg>
-        <style>circle{transition:all 0.2s}circle:hover{stroke-width:35;stroke-opacity:0.8}</style>
-        <div id="linear-graph" class="shared">
-          <p id="css">css</p>
-          <p id="htm">html</p>
-          <!--<p id="jq">jquery</p>-->
-          <p id="j">javascript</p>
-          <p id="php">php</p>
-          <p id="ph">sql</p>
-        </div>
-        
-        <div class="shared margin-top">
-        <p>and on my way to becoming a guru in:</p>
+      <div class='skills cf row'>
+         <blockquote class="row shared" id="description">I'm an enthusiastic front-end/back-end web developer, currently in Atlanta, with a constant desire to challenge my creativity in Web Design, Web Development, User Experience(UX) and User Interface(UI) Design.<br>With the experience I've acquired, I've come to love minimalism and clean, detailed design and incorporate it vehemently in my work!<br><br> I'm currently available for freelance and/or fulltime work.
+       <hr class="divider margin-top">
+       <div class=" nomobi margin-top">
+        <p style="text-align:center">...and on my way to becoming a guru in:</p>
         <ul id="guruat">
         <li>Ruby on Rails</li>
         <li>Python</li>
         <li>Java</li></ul>
        </div>
-
+        <a class="resume button margin-top nomobi" target="_blank" href="Yaw_Resume.pdf">View my r&#233;sum&#233;</a>
+       </blockquote> 
+        <div id="langs" class="shared row cf">  
+          <p>I'm pretty awesome at...</p>
+          <div id="linear-graph" class="row">
+            <p id="css">css</p>
+            <p id="htm">html</p>
+            <p class="hidden" id="jq">jquery</p>
+            <p id="j">javascript</p>
+            <p id="php">php</p>
+            <p id="ph">sql</p>
+          </div>
+          <svg id="radial-graph" height="500">
+	   <circle cx="50%" cy="50%" r="200" fill="none" stroke="#123" stroke-width="25" stroke-dasharray="700,600" stroke-dashoffset="965"></circle>
+           <circle cx="50%" cy="50%" r="170" fill="none" stroke="#99c" stroke-width="25" stroke-dasharray="600,400" stroke-dashoffset="-280"></circle>
+           <circle cx="50%" cy="50%" r="140" fill="none" stroke="#61b33b" stroke-width="25" stroke-dasharray="600,380" stroke-dashoffset="280"></circle>
+    	   <circle cx="50%" cy="50%" r="110" fill="none" stroke="#37a9fa" stroke-width="25" stroke-dasharray="400,100" stroke-dashoffset="50"></circle>
+	   <circle cx="50%" cy="50%" r="80" stroke="#ffaf59" stroke-width="25" stroke-dasharray="443,200" stroke-dashoffset="0" fill="none"></circle>
+  	   <circle cx="50%" cy="50%" r="65" fill="#6a6a6a"></circle>
+           <text x="45%" y="51%" fill="#fff">skills</text>
+          </svg>
       </div>
-      <a class="button resume" target="_blank" href="CV.pdf">View my résumé</a>
+      
      </div>
    </div>
 </section>
@@ -146,53 +154,30 @@ Contact: yasare16@gmail.com || (347) 470-3610
        <div class="hero">
           <div class="optimum">
              <div class="row" style="text-shadow:0 1px #333">
-                <h1 class="page-heading">Work</h1>
+                <h1 class="page-heading title row">Work</h1>
                 <p>Through identity branding, web design, web development and internet consulting, below are a few projects/websites that showcase my work.</p>
              </div>
           </div> 
        </div>
-       <div class="work-display">
-           <div class="items-row cf">
-               <div class="col">
-                <a href="http://organizations.mercer.edu/asa" target="_blank">
-                   <img class="first" src="/image/mercer.gif" alt="Mercer University ASA, Macon, GA/From Scratch">
-                   <img class="last" src="/image/mercer_dark.gif" alt="Mercer University ASA, Macon, GA/From Scratch">
-                </a>
-               </div>
-               <div class="col">
-               	<a href="http://www.advancedlife.org" target="_blank">
-                  <img class="first" src="/image/advanced.gif" alt="Advanced Life Organisation, Norcross, GA/WordPress">
-                  <img class="last" src="/image/adv_dark.gif" alt="Advanced Life Organisation, Norcross, GA/WordPress">
-                </a>
-               </div>
-               <div class="col">
-                <a href="http://www.lightopticalnyc.com" target="_blank">
-                  <img class="first" src="/image/light.gif" alt="Light Optical NYC/Magento">
-                  <img class="last" src="/image/light_dark.gif" alt="Light Optical NYC/Magento">
-                </a>
-               </div>
-           </div>
 
-           <div class="items-row cf">
-               <div class="col">
-                <a href="http://create.yawdesigns.com" target="_blank">
-                  <img class="first" src="/image/create.gif" alt="Create Series 2/From scratch">
-                  <img class="last" src="/image/create_dark.gif" alt="Create Series 2/From scratch">
+       <div class="work-display" ng-app="yawDesigns" ng-controller="data">
+           <ul class="items-row cf">
+               <li class="col" ng-repeat="x in work1">
+                <a href="{{x.link}}">
+                   <img class="first" src="{{x.img}}" alt="{{x.alt}}">
                 </a>
-               </div>
-               <div class="col">
-               	 <a href="http://www.atrique.com" target="_blank">
-                   <img class="first" src="/image/atr.gif" alt="Atrique Clothing">
-                   <img class="last" src="/image/atr-grey.gif" alt="Atrique Clothing/South Africa/From scratch">
+               </li>
+           </ul>
+
+           <ul class="items-row cf">
+               <li class="col" ng-repeat="x in work2">
+                <a href="{{x.link}}">
+                   <img class="first" src="{{x.img}}" alt="{{x.alt}}">
                 </a>
-               </div>
-               <div class="col">
-                <a href="http://idea.yawdesigns.com" target="_blank">
-                  <img class="first" src="/image/create2.gif" alt="Create Series 1/From scratch">
-                  <img class="last-one" src="/image/create2_dark.gif" alt="Create Series 1/From scratch">
-                </a>
-               </div>
-           </div>
+               </li>
+           </ul>
+           
+           
        </div>
     </div>
 </section>
@@ -224,53 +209,83 @@ Contact: yasare16@gmail.com || (347) 470-3610
       </div>
       
       <div class="contact-form text-shadow">
-         <form id="myForm" method="POST" action="/index.php" novalidate="novalidate">
-           <h1>Tell me about your web design project/idea, give me some feedback about this website…or just say <u>Hello!</u>☺</h1><br><br>
+         <form id="myForm" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+           <h1>Tell me about your web design project/idea, give me some feedback about this website&hellip;or just say <u>Hello!</u>&#9786;</h1><br><br>
            <ul>
                <li>
-                   <label>Name<span>∗</span></label>
-                   <span><input type="text" placeholder="first name" name="f_name" value=""><input type="text" placeholder="last name" name="l_name" value=""></span>
-                   <span></span><br>
+                   <label>Name<span>&lowast;</span></label>
+                   <span><input type="text" placeholder="first name" name="f_name" value=""><input type="text" placeholder="last name" name="l_name" value="<?php echo $l; ?>"></span>
+                   <span><?php $l; ?></span><br>
                </li>
                <li>  
                    <label>Company</label>
-                   <span><input class="adjust" type="text" name="company" value=""></span>
-                   <span></span><br>
+                   <span><input class="adjust" type="text" name="company" value="<?php echo $c; ?>"></span>
+                   <span><?php $c; ?></span><br>
                </li>
                <li>
-                   <label>Email<span>∗</span></label>
-                   <span><input class="adjust small" type="email" name="email" value=""></span>
-                   <span></span><br>
+                   <label>Email<span>&lowast;</span></label>
+                   <span ><input class="adjust small" type="email" name="email" value="<?php echo $e; ?>"></span>
+                   <span><?php $e; ?></span><br>
                </li>
                <li>
                    <label>Contact number</label>
-                   <span><input class="adjust" type="text" name="number" value=""></span>
-                   <span></span><br>
+                   <span><input class="adjust" type="text" name="number" value="<?php echo $n; ?>"></span>
+                   <span><?php $n; ?></span><br>
                </li>
                <li>
-                   <label>Subject of message<span>∗</span></label>
-                   <span><input class="adjust" type="text" name="subject" value=""></span>
-                   <span></span><br>
+                   <label>Subject of message<span>&lowast;</span></label>
+                   <span><input class="adjust" type="text" name="subject" value="<?php echo $s; ?>"></span>
+                   <span><?php $s; ?></span><br>
                </li>
                <li>
-                   <label>Message<span>∗</span></label>
-                   <span><textarea rows="8" class="adjust small" placeholder="…✍" name="message"></textarea></span>
-                   <span></span><br>
+                   <label>Message<span>&lowast;</span></label>
+                   <span><textarea rows="8" class="adjust small" placeholder="&hellip;&#9997;" name="message"></textarea></span>
+                   <span><?php $m; ?></span><br>
                </li>
                <li><input class="button" type="submit" name="submit" value="submit!"></li>    
            </ul>
-                    </form>
+           <?php
+
+         if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            $f = $_POST['f_name'];
+            $l = $_POST['l_name'];
+            $c = $_POST['company'];
+            $e = $_POST['email'];
+            $n = $_POST['number'];
+            $s = $_POST['subject'];
+            $m = $_POST['message'];
+            $mes_sage = "<strong>Name:</strong> $f $l<br>
+                        <strong>Company:</strong> $c<br><strong>Sent from:</strong> $e<br>
+                        <strong>Phone number:</strong> $n<br>
+                        <strong>Message:</strong> $m<br><br>
+
+                        <strong>Sender IP:</strong> $ip"; 
+
+
+          	$to = 'yasare16@gmail.com';
+          	$headers  = 'MIME-Version: 1.0' . "\r\n";
+		  	    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+
+          	$r = mail($to, $s, $mes_sage, $headers) ? "<p class='success'>&#10004; Your message has been sent!</p>" : "<p class='failure'>&#10006; Sorry, there was an error sending the message. Try again later.</p>";
+          	echo $r;
+          	header('Location:http://www.yawdesigns.com/index.php');
+         }// end
+
+       ?>
+         </form>
       </div>
   </div>
 </section>
+<!--FOOTER-->
 <footer>
     <div class="yaw-designs">yaw asare designs</div>
-    <div class="copy">© 2014</div>
+    <div class="copy">&copy; <?php echo date('Y'); ?></div>
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/model-cntrl.js"></script>
 
-
-
-
-</body></html>
+</body>
+</html>
