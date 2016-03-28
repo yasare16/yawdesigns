@@ -71,8 +71,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-::selection{background:#37a9fa;color:#fff;text-shadow:none}
-::-moz-selection{background:#37a9fa;color:#fff;text-shadow:none}
+::selection{background:#123;color:#fff;text-shadow:none}
+::-moz-selection{background:#123;color:#fff;text-shadow:none}
 
 
 /*clearfix*/
@@ -83,7 +83,7 @@ footer, header, hgroup, menu, nav, section {
        TRANSITIONS  SHADOWS AND STUFF
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/**ANIMATIONS**/
+/**ANIMATIONS
 @keyframes myfirst{ from{height:50%} to{height:0;opacity:0} }
 @-webkit-keyframes myfirst{ from{height:50%} to{height:0;opacity:0} }
 
@@ -91,21 +91,23 @@ footer, header, hgroup, menu, nav, section {
 @-webkit-keyframes second{ from{top:50%} to{top:100%;opacity:0;height:0} }
 
 @keyframes logo{ from{top:40%} to{top:-150px;opacity:0} }
-@-webkit-keyframes logo{ from{top:40%} to{top:-150px;opacity:0} }
+@-webkit-keyframes logo{ from{top:40%} to{top:-150px;opacity:0} }**/
 
 /**shadows and transitions**/
-#envelope-top,#envelope-bottom,.loading{ -webkit-animation-duration:0.8s;animation-duration:0.8s;-webkit-animation-delay:5.2s;animation-delay:5.2s;-webkit-animation-timing-function:cubic-bezier(0.630, 0.000, 0.620, 1.000);animation-timing-function:cubic-bezier(0.630, 1.000, 0.620, 1.000);-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;display:none \9; }
-#envelope-top{ box-shadow:0 0 5px #aaa}
-.container1,.container2,.showcase,.col img,.contact-form input:focus,.contact-form textarea:focus,.prenav span,.nav a,.skills div span,.yaw-designs{transition:all .4s;-moz-transition:all .4s}
-
+#envelope-top,#envelope-bottom,.loading{-webkit-animation-duration:0.8s;animation-duration:0.8s;-webkit-animation-delay:5.2s;animation-delay:5.2s;-webkit-animation-timing-function:cubic-bezier(0.630, 0.000, 0.620, 1.000);animation-timing-function:cubic-bezier(0.630, 1.000, 0.620, 1.000);-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;display:none \9; }
+#envelope-top{box-shadow:0 0 5px #aaa}
+.container1,.container2,.showcase,.col img,.contact-form input:focus,.contact-form textarea:focus,.flap,.nav a,.skills div span,.yaw-designs{transition:all .4s;-moz-transition:all .4s}
+.col img:hover{transition:all linear 13s;-moz-transition:all linear 13s}
 .icons img:hover {-webkit-transform:scale(1.2,1.2);transform:scale(1.2,1.2)}
 #me{transition:transform .2s;-webkit-transition:-webkit-transform .2s}
+footer,footer:before{-webkit-transition:all .2s;transition:all .2s}
 .status{transition:width 4s ease-out;-webkit-transition:width 4s ease-out}
 .load-tran{transition:all .5s ease 4s;-webkit-transition:all .5s ease 4s}
 .slide-tran{transition:height 1s linear 4s;-webkit-transition:height 1s linear 4s}
 .envelope{box-shadow:0 2px 10px #000}
 .button:hover,.button:focus{box-shadow:inset -1px 2px 10px #444}
 .section:after{box-shadow:0 3px 8px #333}
+.showcase{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);transform: rotate(45deg)}
 /*
  cubic-beizer {-webkit-transition: all 800ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
 */
@@ -113,29 +115,32 @@ footer, header, hgroup, menu, nav, section {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 STRUCTURE 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-html,body{height:100%}    
+html,body{height:100%}
 html{background:#f0f0f0}
 #cover{background:#f4f4f4 url(/image/bg.jpg)}
 h1, h2, h3, h4, h5, h6, p, blockquote{padding:2% 0}
 section{position:relative; background:#fff}
 #home{height:100%;/*background-attachment:fixed*/}
+#about{background-image:url(http://www.transparenttextures.com/patterns/blizzard.png)}
 #work{}
 section h1{font-family:"Fjalla One", Verdana, Geneva, sans-serif}
-section p{font-family:"Sanchez", "Palatino Linotype", "Book Antiqua", Palatino, serif}
+section p{font-family:"Gafata", "Palatino Linotype", "Book Antiqua", Palatino, serif}
 .wrap{padding:60px 0}
 .half-wrap{padding:30px 0}
 .page-heading{font-size:2.2em}
-.row{padding:0 2%}
-.optimum{width:980px;margin:0 auto}
-.divider{border-top:0;margin-top:25px}
+.title{display:inline-block;margin-bottom:60px}
+.row{padding:2%}
+.optimum{position:relative;width:85%;margin:0 auto}
+.divider{border-top:0}
 .text-shadow{text-shadow:0 1px #fff}
-.button{display:inline-block;font-family:"Gafata", serif;background:#37a9fa;color:#fff;text-transform:uppercase !important;padding:6px;margin:1.6% 0;border:5px double #f0f0f0;cursor:pointer}
+.button{display:inline-block;font-family:"Gafata", serif;background:#37a9fa;color:#fff;text-transform:uppercase !important;padding:6px;margin:1.6% 0;border:5px double #f0f0f0 !important;cursor:pointer}
+.shared{width:50%;float:left}
 
     
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 HEADER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.header{position:fixed !important;width:100%;height:102px;z-index:10;background:#fff }
+.header{position:fixed;width:100%;z-index:10;background:#fff;overflow:hidden}
 .yaw-logo{display:block;position:relative;width:100px;margin-left:4%}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,13 +148,15 @@ section p{font-family:"Sanchez", "Palatino Linotype", "Book Antiqua", Palatino, 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .nav{position:absolute;top:22px;right:4%;text-align:center}
 .prenav{position:relative;top:-58px}
-.prenav span,.nav a{text-transform:uppercase;color:#000;font:1.1em "Gafata",philosopher,calibri,sans-serif;margin:0 10px;position:relative}
+.nav a{display:inline-block;top:-22px}
+.flap,.nav a{text-transform:uppercase;color:#000;font:1.1em "Gafata",philosopher,calibri,sans-serif;margin:0 10px;position:relative}
 .nav a:hover{color:#f4f4f4}
-.prenav span{background:#37a9fa;opacity:0.8;color:#37a9fa;border-radius:0 0 10px 10px;padding:0 10px;margin:0}
+.nav .fa{display:block;color:#fff;margin-bottom:5px}
+.flap{background:#37a9fa;opacity:0.8;color:#37a9fa;border-radius:0 0 10px 10px;padding:0 10px;margin:0}
 .d3{padding-right:9px}.d4{padding-right:9px}
-.down{padding-bottom:85px !important}
-.current{padding-bottom:85px !important}
-.this{color:#f4f4f4 !important}
+.down{padding-bottom:85px!important}
+.current{padding-bottom:85px!important}
+.this{color:#f4f4f4!important}
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -169,58 +176,61 @@ section p{font-family:"Sanchez", "Palatino Linotype", "Book Antiqua", Palatino, 
       
 /* HOMEPAGE */
 .wrapper{position:relative;height:100%}
-.container1,.container2{width:100%;height:100%;background-image:url(image/top.jpg);background-size:cover;position:absolute;top:0;left:0;-webkit-filter: blur(1px);filter: blur(1px);}
-.container2{background-image:url(image/top-grey.jpg)}
-.showcase{display:block;-moz-box-sizing:content-box;box-sizing:content-box;position:relative;top:43%;outline:2px solid rgb(244, 244, 244);border:4px double #f4f4f4;width:350px;margin:0 auto;padding:20px 30px 15px;background:rgb(55,169,250);background:rgba(55,169,250,0.8);color:#eee;text-align:right;text-shadow:0 1px #757575}
-.showcase h1{font:22px "Fjalla One",courier,serif;text-transform:uppercase;margin-bottom:5px;padding:0}
-.showcase hr{border:1px dashed transparent;border-top-color:#fff;border-bottom-color:#000;opacity:0.3; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30)}
+.container1,.container2,.container3{width:100%;height:100%;background-image:url(image/top.jpg);background-attachment:fixed;background-size:cover;position:absolute;top:0;left:0}
+.container2{background-image:url(image/top-grey.jpg);display:none}
+.container3{background-image:url(image/dotss.png);background-size:50px;background-color: rgba(55, 169, 250, 0.1)}
+.showcase{display:block;position:relative;top:30%;outline:2px solid rgb(244, 244, 244);border:4px double #f4f4f4;width:300px;height:300px;margin:0 auto;background:rgba(17, 34, 51, 0.8);text-shadow:0 1px #757575;box-shadow: 1px 1px 10px #000;}
+.intro{text-align:center;position:relative;top: 9%;color:#f3f3f3;cursor:pointer;-webkit-user-select:none;user-select:none}
+.intro img{width:60px;opacity:0.6;margin-top:30px;}
+.intro h1{font:bold 26px "Gafata",courier,serif;text-transform:uppercase;margin-bottom:5px;padding:0}
+.intro h1:last-of-type{font-size:20px}
+.intro hr{border:1px dashed transparent;border-top-color:#fff;border-bottom-color:#000;opacity:0.3;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30);width: 300px;}
 
 /* ABOUT */
-.profile{margin-top:30px}
-.me-wp,.blurb{float:left;width:50%}
-#me{background:url('/image/yaw_draw.png') no-repeat;background-size:115% 100%;border:5px solid #fff;width:250px;height:280px;margin:0 auto;-webkit-box-shadow:0 2px 5px #555;-moz-box-shadow:0 2px 5px #555;-o-box-shadow:0 2px 5px #555;box-shadow:0 2px 5px #555}
-#circ{opacity:0;margin:45px auto;height:200px;width:200px;border-radius:50%;background:rgb(55,169,250);background:rgba(55,169,250,0.8);color:#f4f4f4;text-align:center;text-transform:uppercase;font:1em gafata,calibri,sans-serif;-moz-transform: scaleX(-1);-webkit-transform: scaleX(-1);-o-transform: scaleX(-1);transform: scaleX(-1);-ms-filter:fliph;filter: fliph;cursor:default}
-#circ span{position:relative;top:35px}
-#circ ul{text-transform:none;list-style:none;padding-top:33px;position:relative}
-#me:hover{background:url('/image/striped.jpg') repeat;-moz-transform: scaleX(-1);-webkit-transform: scaleX(-1);-o-transform: scaleX(-1);transform: scaleX(-1);-ms-filter:fliph;filter: fliph}
-#me:hover > #circ{opacity:1}
+#about{box-shadow: 0 -3px 20px #333;}
+#about .page-heading{color:#123}
+.profile{margin-top:30px;-webkit-user-select:none;user-select:none}
+#me{background:url('/image/me2.jpg')no-repeat;background-size:cover;border:5px solid #123;width:250px;height:280px;margin:20px auto 0;}
+#circ{opacity:0;margin:38px auto;height:200px;width:200px;border-radius:50%;background:rgb(55,169,250);background:rgba(55,169,250,0.8);color:#f4f4f4;text-align:center;text-transform:uppercase;font:1em gafata,calibri,sans-serif;-moz-transform: scaleX(-1);-webkit-transform: scaleX(-1);-o-transform: scaleX(-1);transform: scaleX(-1);-ms-filter:fliph;filter: fliph;cursor:default}
+#circ span{position:relative;top:38px}
+#circ ul{text-transform:none;list-style:none;padding-top:38px;position:relative}
+.rotate{background:url('/image/striped.jpg') repeat!important;-moz-transform: scaleX(-1);-webkit-transform: scaleX(-1);-o-transform: scaleX(-1);transform: scaleX(-1);-ms-filter:fliph;filter: fliph;}
+.rotate > #circ{opacity:1}
 .blurb{font:bold italic 22px/4 georgia,serif;color:#aaa;cursor:default}
 #about-yaw,#webdesign,#what{text-transform:uppercase}
-#about-yaw{font:35px "Sanchez";color:#f4f4f4;background:#333;padding:0 7px}
-#webdesign{font:60px "Fjalla One","Electrolize",sans-serif;color:#139ed5;text-shadow:0 1px 1px #666}
-#what{font:22px michroma;color:#b36a4b;text-shadow:none}
-.skills{margin-top:30px}
-#linear-graph p{width:5px;border-radius:0 6px;color:#222;font:14px gafata;text-transform:uppercase;text-align:center;padding:2px 8px; margin:10px 0;opacity:0.8;cursor:default;text-indent:15px;}
-#radial-graph{text-transform:uppercase;font-family: gafata;}
-#guruat{width:290px;cursor:default}
-#guruat li{background:#bbb url(/image/striped.jpg);color:#222;font:18px gafata;padding:5px;margin-top:5px;text-align:center;box-shadow:inset 0 0 10px #999;}
+#about-yaw{font:35px "Gafata",sans-serif;color:#f4f4f4;background:#123;padding:0 7px}
+#webdesign{font:55px "Fjalla One","Electrolize",sans-serif;color:#139ed5;text-shadow:1px 0 1px #666}
+#what{font:30px "Electrolize",sans-serif;color:#123;text-shadow:5px 0 #fff, 4px 0px #139ed5;}
+#langs{position:relative}
+#linear-graph{position:relative;left:-6px}
+#linear-graph p{width:5px;border-radius:0 6px;color:#222;font:14px gafata;text-transform:uppercase;text-align:center;padding:2px 8px; margin:10px 0;opacity:0.8;cursor:default;text-indent:15px}
+#radial-graph{position:absolute;top:72px;left:20px;width:100%;text-transform:uppercase;font-family:gafata;padding-left:5em}
+circle{transition:all 0.2s}
+circle:hover{stroke-width:35;stroke-opacity:0.8}
+#guruat{width:290px;margin:0 auto;cursor:default}
+#guruat li{background:#bbb url(/image/striped.jpg);color:#222;font:18px gafata;padding:5px;margin-top:5px;text-align:center;box-shadow:inset 0 0 10px #999}
 #guruat li:hover{background:#37a9fa;color:#fff}
-#description{font:1.1em "Sanchez", "Palatino Linotype", "Book Antiqua", Palatino, serif;max-width:800px}
+#description{font:1.1em "Gafata","Palatino Linotype","Book Antiqua",Palatino,serif;text-align:justify;margin:8px auto}
 .skills p{font:20px "Fjalla One"}
 #css{background:#37a9fa}
 #htm{background:#ffaf59}
 #jq{background:#0769ad}
 #j{background:#61b33b}
 #php{background:#99c}
-#ph{background:#a30303}
-.shared{width:50%;float:left}
+#ph{background:#123}
+.resume{font-size:15px;margin-left:35%}
 
 /* WORK */ 
-.work-container .hero{background:url(/image/works.jpg);padding:100px 0;color:#fff;}
-.work-container .page-heading{border-bottom:1px solid #37a9fa}
-.work-display{box-shadow: 0 -4px 15px #333;}
+.work-container .hero{background:url(/image/works.jpg);padding:100px 0;color:#fff}
+.work-display{box-shadow: 0 -4px 15px #333}
 .items-row{}
-.col{float:left;width:33.23%;width:calc(100% / 3.0001);height:300px;background:#666;/*overflow:hidden;*/-webkit-transform-style:preserve-3d;transform-style:preserve-3d}
-.col a{position:relative;display:block;height:100%;width:100%;}
-.col img{position:absolute;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
-.col .last, .col .last-one{-webkit-transform:rotateX(0deg)translateZ(168px);transform:rotateX(0deg)translateZ(168px)}/*visible img*/
-.col .first{-webkit-transform:rotateX(-90deg)translateZ(168px);transform:rotateX(-90deg)translateZ(168px)}
-.col:hover .first{-webkit-transform:rotateX(0deg)translateZ(168px);transform:rotateX(0deg)translateZ(168px)}
-.col:hover .last,
-.col:hover .last-one{/*opacity:0;*/-webkit-transform:rotateX(90deg)translateZ(168px);transform:rotateX(90deg)translateZ(168px)}
+.col{float:left;width:33.23%;width:calc(100% / 3.0001);height:264px;background:#1D2029;border-bottom: 5px solid #1D2029}
+.col a{position:relative;display:block;height:100%;width:100%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;overflow:hidden}
+.first{/*position:absolute*/}
+.col:hover .first{transform:scale(1.5, 1.5)}
 .section{margin-top:30px}
-.section:after {content:" ";width:100%;height:2px;border-radius:50%;background:#aaa;opacity:0.8;display:block;position:relative;top:0;margin:50px 0}
-.comp{display:inline-block;position:relative;background:url(/image/imac.png) no-repeat;height:440px;width:490px;padding: 25px 0 0 22px;height:460px; width:585px}
+.section:after{content:" ";width:100%;height:2px;border-radius:50%;background:#aaa;opacity:0.8;display:block;position:relative;top:0;margin:50px 0}
+.comp{display:inline-block;position:relative;background:url(/image/imac.png) no-repeat;height:440px;width:490px;padding:25px 0 0 22px;height:460px;width:585px}
 #mobi{background:url(/image/mobi.png) no-repeat;height:520px;width:350px;position:relative;top:35px;left:55%}
 .in-wrap{overflow:hidden;height:249px;width:438px;height:310px;width:555px}
 #light,.section div a{display:block;height:310px}
@@ -234,7 +244,7 @@ section p{font-family:"Sanchez", "Palatino Linotype", "Book Antiqua", Palatino, 
 .right{margin:10px 0;padding:50px 0}
 
 /* CONTACT */
-.icons{text-align:center;padding:5px 0;margin-bottom:60px;border: 1px solid #f0f0f0;border-right: none;border-left: none}
+.icons{text-align:center;padding:5px 0;margin-bottom:60px}
 .icons li{display:inline-block;margin:1.6%;vertical-align:top}
 .icons a{display:block;width:30px;height:30px;background:url(image/yaw-social.png) no-repeat;text-indent:-9999px;overflow:hidden}
 .icons a:hover{transform: scale(1.1);-webkit-transform: scale(1.1)}
@@ -247,23 +257,24 @@ section p{font-family:"Sanchez", "Palatino Linotype", "Book Antiqua", Palatino, 
 .contact .div1{background:#37a9fa}
 .contact .div1:before{top:0}
 .contact .div2{background:#000}
-.div1 h1:before,.div1 h1:after{content:"\21E1"}
-.div2 h1:before,.div2 h1:after{content:"\21E3"}
+.div1 h1:before,.div1 h1:after,.div2 h1:before,.div2 h1:after{content:"\f0a6";font-family:'FontAwesome';margin:0 10px;}
+.div2 h1:before,.div2 h1:after{content:"\f0a7"}
 .message-me .optimum{text-align:center}
 .message-me .info{font:1.1em "Gafata",sans-serif;margin:0 1.6%}
 #email:before{content:"\2709\00a0";opacity:0.7}
 #phone:before{content:"\260e\00a0";opacity:0.7}
+#email::after {content:" ";display:inline-block;position:absolute;bottom:-36px;border:20px solid #fff;border-left-color:transparent;border-bottom-color:transparent;border-right-color:transparent}
 .contact-form{background:#f1f1f1;padding:50px 10px;font:1em "Gafata"}
-.contact-form form{width:400px;text-align:left;margin:0 auto}
+.contact-form form{max-width:960px;text-align:left;margin:0 auto}
 .contact-form h1{color:#444;font-size:20px}
 .contact-form li{margin-bottom:20px}
-.contact-form .adjust{width:93%}
-.contact-form .small{text-transform: lowercase;}
+.contact-form input{}
+.contact-form .small{}
 .contact-form label{display:block;color:#444}
 .contact-form label span{color:red}
-.contact-form input,.contact-form textarea{outline:0 !important;border:1px dashed #d5d5d5;border-radius:4px;padding:10px 6px;margin:1% 1.6% 0 0;text-transform:capitalize}
+.contact-form input[type=text],.contact-form textarea{width:93%;border:1px dashed #d5d5d5;border-radius:4px;padding:10px 6px;margin:1% 1.6% 0 0}
 .contact-form input:focus,.contact-form textarea:focus{border-color:#37a9fa}
-.button[type="submit"]{padding:10px;font-size:1.1em;border:none}
+.button[type="submit"]{padding:10px;font-size:1.1em}
 .error{font-size:13px;color:red !important;margin:6px 0}
 .success, .failure{color:#fff;text-shadow:none;text-align:center;margin:10px 0;padding:10px;border:2px solid #444;border-radius:5px}
 .success{background:#37a9fa}
@@ -272,9 +283,12 @@ section p{font-family:"Sanchez", "Palatino Linotype", "Book Antiqua", Palatino, 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
      FOOTER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-footer{width:18%;float:right;background:#222;padding:8px 0;text-align:right;border-left:5px solid #37a9fa}
-footer *{display:inline-block;padding-left:5px;font-size:12px;color:#fff}
-.yaw-designs{text-align:center;text-transform:uppercase;font-family:"Gafata",georgia,serif;cursor:default}
+footer{position:relative;width:18%;float:right;background:#666 url(http://www.transparenttextures.com/patterns/bright-squares.png);padding:8px 0;text-align:center;border-left:4px solid #37a9fa}
+footer:hover{border-left-width:37px;border-radius: 4px 0 0 4px}
+footer:hover:before{opacity:1}
+footer *{display:inline-block;padding-left:5px;font-size:12px;color:#e5e5e5}
+footer:before{content:"";display:block;width:30px;height:30px;background:url(image/footer-logo.png);background-size:30px;position:absolute;top:1px;left:-33px;opacity:0}
+.yaw-designs{text-transform:uppercase;font-family:"Gafata",georgia,serif;cursor:default}
 .copy{font-family:"Courier New", Courier,monospace;padding-right:4%}
 
 
@@ -287,7 +301,8 @@ footer *{display:inline-block;padding-left:5px;font-size:12px;color:#fff}
 
 @media all and (min-width: 980px){
     .margin-top{margin-top:8%}
-    .resume{margin-left:40%}	
+    .hidden{display:none}
+    #langs{border-left:1px solid #eee}	
 }
 
 @media all and (max-width: 980px)/*smaller computers*/{
@@ -309,31 +324,34 @@ footer *{display:inline-block;padding-left:5px;font-size:12px;color:#fff}
 }
 
 @media all and (max-width: 800px)/*Ipad, kindle..*/{
-    .container1,.container2{background-image:url(/image/skyline-grey.jpg);}
-    .col .first{-webkit-transform:rotateX(0deg)translateZ(0px);transform:rotateX(0deg)translateZ(0px)}
-    .last{display:none}
+    .container1,.container2{background-image:url(/image/skyline-grey.jpg);background-attachment:scroll}
     .nav{right:1%}
-    .prenav span,.nav a{font-size:1em}
-    footer{width:44%}
+    .flap,.nav a{font-size:1em}
+    footer{width:36%}
 }
 
 @media all and (max-width:400px)/*smart phones*/{
     .header{height:125px}
     .yaw-logo {width: 80px;margin: 0 auto;padding:2% 0}
     .nav{margin:0 auto;position:static}
-    .nav a{margin:0 5px}
-    .prenav span{display:none}
+    .nav a{margin:0 5px;top:0}
+    .flap{display:none}
+    .nav .fa{display:none}
     .nav a:active,.nav a:hover{color:#000}
-    .showcase {padding:8px 0;width:100%;text-align:center;outline:none;border:none;border-top: 4px double rgba(255,255,255,0.3);border-bottom: 4px double rgba(255,255,255,0.3);box-shadow:none}
-    .showcase div{ font-size:20px }
+    .showcase{top:33%;background:rgba(55,169,250,0.8);width:220px;height:220px}
+    .intro{top:12%;color:#d4d4d4;text-shadow: 0 0 #f3f3f3;}
+    .intro h1{font-size:22px;font-weight:normal}
+    .intro h1:last-of-type{font-size:18px}
+    .intro hr{width:220px}
     #about-yaw{font-size:28px}
     #webdesign{font-size:48px}
-    #and,#what{font-size:20px}
+    #and,#what{font-size:25px}
     #guruat{font-size:1.2em}
     .col{float:none;margin:0 auto;width:100%;height:230px}
     .col img{width:100%}  
     .comp{background:none;height:auto;padding:0}
     .in-wrap{width:auto;height:200px;border:3px solid #fff;box-shadow:0 0 5px #333}
+    .half-wrap h1{font-size:2em}
     .left{left:0}
     .section div a{border:none;height:200px;margin: 0 auto}
     .section:after {background:#777;top:7px;margin:15px 0;opacity: 0.5}
